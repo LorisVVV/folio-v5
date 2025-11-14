@@ -1,0 +1,27 @@
+.Grid {
+    position: fixed;
+
+    width: 100vw;
+    height: 100vh;
+
+    z-index: auto;
+
+    /* --taille-cell: 175px; */
+
+    top: 0;
+    left: 0;
+
+    display: grid;
+
+    grid-template-columns: repeat(auto-fill, minmax(var(--taille-cell), 1fr) );
+    grid-template-rows: repeat(auto-fill, minmax(var(--taille-cell), 1fr) );
+
+    
+    pointer-events: none;
+
+}
+
+.Grid > div {
+    border: 1px rgba(255, 255, 255, 0.05) solid;
+}
+

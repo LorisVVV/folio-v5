@@ -1,0 +1,28 @@
+.coordinates {
+    position: absolute;
+    bottom: 1em;
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    display: flex;
+    font-size: smaller;
+
+    gap: 1em;
+}
+
+
+.coordinates > div {
+    width: 60px;
+
+    display: flex;
+}
+
+.coordinates > div > p:first-child {
+    font-weight: bolder;
+}
+
+.coordinates > div > p:last-child {
+    text-align: end;
+    flex: 1;
+}

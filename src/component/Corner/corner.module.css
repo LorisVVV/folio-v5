@@ -1,0 +1,52 @@
+.corners {
+    position: absolute;
+    /* top: 0;
+    left: 0; */
+    --space : 0;
+
+    width: 3em;
+    height: 3em;
+
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    /* transition: width height 0.5s; */
+}
+
+.corners.fixed {
+    top: 0;
+    left: 0;
+    --space : 1em;
+
+    width: 100vw;
+    height: 100vh;
+
+    transform: translateX(0);
+}
+
+.corners svg:nth-child(1) {
+    position: absolute;
+    top: var(--space);
+    left: var(--space);
+    transform: rotate(0);
+}
+
+.corners svg:nth-child(2) {
+    top: var(--space);
+    right: var(--space);
+    position: absolute;
+    transform: rotate(90deg);
+}
+
+.corners svg:nth-child(3) {
+    bottom: var(--space);
+    right: var(--space);
+    position: absolute;
+    transform: rotate(180deg);
+}
+
+.corners svg:nth-child(4) {
+    bottom: var(--space);
+    left: var(--space);
+    position: absolute;
+    transform: rotate(270deg);
+}
