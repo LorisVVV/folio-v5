@@ -1,26 +1,15 @@
 .corners {
     position: absolute;
-    /* top: 0;
-    left: 0; */
     --space : 0;
 
     width: 3em;
     height: 3em;
 
     pointer-events: none;
-    transform: translate(-50%, -50%);
-    /* transition: width height 0.5s; */
 }
 
 .corners.fixed {
-    top: 0;
-    left: 0;
     --space : 1em;
-
-    width: 100vw;
-    height: 100vh;
-
-    transform: translateX(0);
 }
 
 .corners svg:nth-child(1) {

@@ -1,6 +1,6 @@
 "use client"
 
-import { RefObject, useState, useEffect } from "react"
+import { useState, useEffect } from "react"
 import style from "./coordinates.module.css"
 
 export default function Coordinates() {

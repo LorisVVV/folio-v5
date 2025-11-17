@@ -1,0 +1,108 @@
+import { useRef } from "react";
+import style from "./Content.module.css";
+import gsap from "gsap"
+import { useGSAP } from "@gsap/react"
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import ProjectSection from "../sections/ProjectSection/ProjectSection";
+import AboutSection from "../sections/AboutSection/AboutSection";
+import ContactSection from "../sections/ContactSection/ContactSection";
+
+gsap.registerPlugin(useGSAP);
+gsap.registerPlugin(ScrollTrigger);
+
+
+
+// const newPath = 'M16.32 72.384H-4.79817e-05L36.096 1.344H50.784L64.32 72.384H48.96L46.464 57.216H23.808L16.32 72.384ZM37.92 28.32L30.144 44.544H44.256L41.568 28.32C41.28 26.592 40.8 23.232 40.8 21.6C40.224 23.232 39.072 26.016 37.92 28.32ZM84.2377 72.384H70.7977L82.2217 1.90735e-06H96.5257L91.8217 30.24C95.2777 25.728 100.27 23.04 106.894 23.04C118.222 23.04 126.574 32.064 126.574 45.12C126.574 62.016 115.918 73.536 101.518 73.536C94.8937 73.536 88.5577 70.368 85.9657 66.048L84.2377 72.384ZM88.8457 50.496C88.8457 56.736 92.6857 60.96 98.8297 60.96C106.222 60.96 112.27 54.432 112.27 46.08C112.27 39.84 108.43 35.616 102.286 35.616C94.8937 35.616 88.8457 42.144 88.8457 50.496ZM132.133 51.744C132.133 35.616 144.709 23.04 160.837 23.04C175.141 23.04 184.741 31.776 184.741 44.832C184.741 60.96 172.165 73.536 156.037 73.536C141.733 73.536 132.133 64.8 132.133 51.744ZM146.725 50.496C146.725 56.736 150.565 60.96 156.709 60.96C164.101 60.96 170.149 54.432 170.149 46.08C170.149 39.84 166.309 35.616 160.165 35.616C152.773 35.616 146.725 42.144 146.725 50.496ZM226.673 24.384H240.977L233.393 72.384H219.953L219.761 67.2C215.729 71.712 211.889 73.632 206.129 73.632C195.473 73.632 188.657 64.608 190.385 53.664L195.089 24.384H209.393L205.265 50.208C204.209 56.64 207.185 60.768 212.273 60.768C217.841 60.768 221.489 57.312 222.545 50.592L226.673 24.384ZM263.239 72.384H248.935L254.599 36.288H245.671L247.591 24.384H256.519L258.823 9.6H273.127L270.823 24.384H279.751L277.831 36.288H268.903L263.239 72.384Z';
+// const project = 'M31.8721 48.384H18.7201L14.9761 72.096H5.10216e-05L11.2321 1.05601H37.4401C50.6881 1.05601 59.1361 9.21601 59.1361 21.984C59.1361 37.536 48.0001 48.384 31.8721 48.384ZM33.5041 14.496H24.0961L20.8321 34.944H30.7201C38.8801 34.944 43.5841 30.816 43.5841 23.52C43.5841 17.76 40.0321 14.496 33.5041 14.496ZM99.2303 24L97.1183 37.44H92.5103C84.2543 37.44 78.5903 41.376 77.1503 50.784L73.7903 72.096H59.4863L67.0703 24.096H80.5103L80.2223 31.104C82.9103 26.4 87.7103 23.328 93.7583 23.328C95.5823 23.328 97.5023 23.52 99.2303 24ZM98.6026 51.456C98.6026 35.328 111.179 22.752 127.307 22.752C141.611 22.752 151.211 31.488 151.211 44.544C151.211 60.672 138.635 73.248 122.507 73.248C108.203 73.248 98.6026 64.512 98.6026 51.456ZM113.195 50.208C113.195 56.448 117.035 60.672 123.179 60.672C130.571 60.672 136.619 54.144 136.619 45.792C136.619 39.552 132.779 35.328 126.635 35.328C119.243 35.328 113.195 41.856 113.195 50.208ZM171.324 16.416C167.292 16.416 164.412 13.44 164.412 9.50401C164.412 4.512 168.924 3.8147e-06 174.012 3.8147e-06C178.044 3.8147e-06 180.924 2.97601 180.924 6.91201C180.924 11.808 176.316 16.416 171.324 16.416ZM141.948 95.328L145.5 82.656C146.94 83.136 147.996 83.232 149.244 83.232C152.508 83.232 153.948 81.408 154.62 76.896L162.972 24.096H177.276L168.636 78.72C166.716 90.624 160.476 96.672 150.396 96.672C147.228 96.672 144.828 96.288 141.948 95.328ZM204.129 73.248C189.921 73.248 181.665 65.376 181.665 51.744C181.665 35.232 193.473 22.752 209.025 22.752C223.905 22.752 232.161 32.64 229.761 48L229.185 51.744L195.297 51.936C195.681 58.368 198.753 61.536 204.897 61.536C209.409 61.536 212.865 59.52 214.689 55.968H228.705C225.441 66.24 215.457 73.248 204.129 73.248ZM208.161 34.368C203.073 34.368 198.849 37.824 196.737 43.008H216.321C217.185 37.728 214.017 34.368 208.161 34.368ZM235.478 51.744C235.478 35.232 247.286 22.752 262.838 22.752C276.566 22.752 284.726 30.336 284.726 42.912H270.326C270.038 38.112 267.062 35.424 261.974 35.424C255.158 35.424 250.07 41.952 250.07 50.688C250.07 57.024 253.142 60.576 258.71 60.576C263.126 60.576 266.774 57.792 268.502 52.992H283.094C280.214 65.184 270.23 73.248 257.942 73.248C243.734 73.248 235.478 65.376 235.478 51.744ZM306.771 72.096H292.467L298.131 36H289.203L291.123 24.096H300.051L302.355 9.312H316.659L314.355 24.096H323.283L321.363 36H312.435L306.771 72.096Z'
+// if (typeof window !== "undefined") {
+//   gsap.registerPlugin(MorphSVGPlugin); 
+// }
+
+export default function Content() {
+
+    const markers = true;
+
+    const scrollRef = useRef(null!)
+
+    const projectRef = useRef(null!)
+    const aboutRef = useRef(null!)
+    const contactRef = useRef(null!)
+
+    useGSAP(() => {
+    
+        
+
+
+        // const timelineAbout = gsap.timeline(
+        //     {scrollTrigger : {
+        //             trigger : aboutRef.current,
+        //             scroller : scrollRef.current,
+        //             start: 'top top', // when the top of the trigger hits the top of the viewport
+        //             end : 'bottom top',
+        //             markers : markers,
+        //             scrub : 1,
+        //         }}
+        //     )
+        // .set(aboutTiltleRef.current, {display : "flex"})
+        // .to(aboutTiltleRef.current, 
+        //     {opacity: "1", duration : 1}
+        // )
+        // .to({}, {duration : 2})
+        // .to(aboutTiltleRef.current, 
+        //     {opacity: "0", duration: 1}
+        // )
+        // .to({}, {duration : 1})
+        // .set(aboutTiltleRef.current, {display : "none"})
+
+
+        // const timelineSocials = gsap.timeline(
+        //     {scrollTrigger : {
+        //             trigger : socialsRef.current,
+        //             scroller : scrollRef.current,
+        //             start: 'top top', // when the top of the trigger hits the top of the viewport
+        //             end : 'bottom top',
+        //             markers : markers,
+        //             scrub : 1
+        //         }}
+        //     )
+        // .set(socialsTiltleRef.current, {display : "flex"})
+        // .to(socialsTiltleRef.current, 
+        //     {opacity: "1", duration : 1}
+        // )
+        // .to({}, {duration : 2})
+        // .to(socialsTiltleRef.current, 
+        //     {opacity: "0", duration: 1}
+        // )
+        // .to({}, {duration : 1})
+        // .set(socialsTiltleRef.current, {display : "none"})
+        
+        ScrollTrigger.refresh();
+    }, [])
+
+    return (
+        <div className={style.Content}>
+            <div ref={scrollRef} className={style.scroll}>
+
+                <section className={style.section}></section>
+
+                <section ref={projectRef} className={style.section}>
+                </section>
+
+                <section ref={aboutRef} className={style.section}>
+                </section>
+
+                <section ref={contactRef} className={style.section}> 
+                </section>
+
+                <section className={style.section}></section>
+
+            </div>
+
+
+            <ProjectSection scrollref={scrollRef} triggerRef={projectRef}/>
+            <AboutSection scrollref={scrollRef} triggerRef={aboutRef}/>
+            <ContactSection scrollref={scrollRef} triggerRef={contactRef}/>
+
+        </div>
+    );
+}
