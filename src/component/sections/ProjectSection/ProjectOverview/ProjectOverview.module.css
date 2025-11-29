@@ -1,0 +1,42 @@
+.ProjectOverview {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+    right: 10vw;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+    width: 30vw;
+    height: fit-content;
+    pointer-events: none;
+    font-family: Satoshi;
+
+}
+
+.ProjectOverview > h2 {
+    font-weight: bolder;
+    font-style: italic;
+    font-size: xx-large;
+    border-radius: 15px;
+}
+
+
+.table {
+    display: flex;
+    flex-direction: column;
+}
+
+.table > div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.text {
+    width: 100%;
+}
+
+.text > p {
+    width: 100%;
+    text-align: justify;
+}

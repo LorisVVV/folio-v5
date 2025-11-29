@@ -4,8 +4,8 @@
     font-style: italic;
     font-weight: bolder;
     position: absolute;
-    top: 100px;
-    left: 100px;
+    top: 15vh;
+    left: 10vw;
     opacity: 0;
-    font-size: 64;
+    font-size: 96;
 }

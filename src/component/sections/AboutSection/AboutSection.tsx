@@ -19,11 +19,11 @@ export default function AboutSection({timeline, scrollref, triggerRef}:{timeline
                             scroller : scrollref.current,
                             start: 'top top', // when the top of the trigger hits the top of the viewport
                             end : 'bottom top',
-                            markers : true,
+                            markers : false,
                             scrub : 1,
                         }}
                     )
-                .set("."+style.title, {display : "flex"})
+                .fromTo("."+style.title, {display:"none"}, {display : "flex"})
                 .to("."+style.title, 
                     {opacity: "1", duration : 1}
                 )

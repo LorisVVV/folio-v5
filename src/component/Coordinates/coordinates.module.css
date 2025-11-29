@@ -9,6 +9,16 @@
     font-size: smaller;
 
     gap: 1em;
+
+    opacity: 0.5;
+}
+
+.coordinates::before {
+    content: "[";
+}
+
+.coordinates::after {
+    content: "]";
 }
 
 

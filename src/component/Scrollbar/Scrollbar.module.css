@@ -1,0 +1,43 @@
+.Scrollbar {
+
+    --max-width : 400px;
+
+    position: absolute;
+
+    margin: auto 0;
+    top: 0;
+    bottom: 0;
+    right: 1em;
+    height: var(--max-width);
+    width: 3px;
+
+    display: flex;
+    justify-content: center;
+}
+
+.scroll {
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: white;
+
+    width: 3px;
+    min-height: 4px;
+    border-radius: 5px;
+
+}
+
+
+.track {
+
+    position: absolute;
+    top: 0;
+    opacity: 0.5;
+    background-color: white;
+
+    width: 1px;
+    height: var(--max-width);
+    border-radius: 5px;
+
+}

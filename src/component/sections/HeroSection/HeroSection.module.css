@@ -1,11 +1,10 @@
 .title {
-    display: none;
+    display: flex;
     font-family: Satoshi;
     font-style: italic;
     font-weight: bolder;
     position: absolute;
     top: 15vh;
     left: 10vw;
-    opacity: 0;
     font-size: 96;
 }

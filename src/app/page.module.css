@@ -9,6 +9,10 @@
   overflow: hidden;
 }
 
+.main > div {
+  z-index: 1;
+}
+
 .button {
   padding: 0.5em 1em;
 }
@@ -24,11 +28,4 @@
 
 @media (prefers-color-scheme: dark) {
   
-}
-
-.test {
-  width: 100px;
-  height: 100px;
-
-  background-color: white;
 }

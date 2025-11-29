@@ -19,20 +19,15 @@ export default function ContactSection({timeline, scrollref, triggerRef}:{timeli
                             scroller : scrollref.current,
                             start: 'top top', // when the top of the trigger hits the top of the viewport
                             end : 'bottom top',
-                            markers : true,
+                            markers : false,
                             scrub : 1,
                         }}
                     )
-                .set("."+style.title, {display : "flex"})
+                .fromTo("."+style.title, {display:"none"}, {display : "flex"})
                 .to("."+style.title, 
                     {opacity: "1", duration : 1}
                 )
-                .to({}, {duration : 2})
-                .to("."+style.title, 
-                    {opacity: "0", duration: 1}
-                )
-                .to({}, {duration : 1})
-                .set("."+style.title, {display : "none"})
+
         
         ScrollTrigger.refresh();
     }, {scope : sectionRef})
