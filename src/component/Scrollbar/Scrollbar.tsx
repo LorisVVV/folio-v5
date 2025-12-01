@@ -22,7 +22,7 @@ export default function Scrollbar({scrollref, triggerRef}:{timeline?:gsap.core.T
                 scrub : 1,
         }})
         .to(ref.current, { 
-            height : 400,
+            height : 404,
             })
     })
 

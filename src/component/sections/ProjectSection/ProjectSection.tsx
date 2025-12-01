@@ -39,7 +39,7 @@ export default function ProjectSection({timeline, scrollref, triggerRef}:{timeli
                             dates: "Sept. 2025 - not finished",
                             grpSize: 1,
                             skills: "Next JS, ThreeJS",
-                            text:"test"
+                            text:"This project is an implementation of the hydrodynamics equation, the Gernster waves, to try to simulate an ocean. It's using NextJS with the library Three JS to generate a plane where each vertex is moved according to the equations that are computed in shaders. Those shaders are homemade using webgl and implement not only the movement of water but also the color, refraction and reflection of it. This project is not finished as I'm trying to implement white foam on top of the waves."
                         },
 
                         {
@@ -49,7 +49,7 @@ export default function ProjectSection({timeline, scrollref, triggerRef}:{timeli
                             dates: "Nov. 2025 - Nov. 2025",
                             grpSize: 1,
                             skills: "Next JS, GSAP",
-                            text:""
+                            text:"This portfolio have been asked as a final project of my web devlopment class. Each of the portfolio that I've done have been a way for me to learn new technologies, for this one I've learn the library GSAP. The portfolio is one page where each section is revealed by scrolling down."
                         },
 
                         {
@@ -71,7 +71,6 @@ export default function ProjectSection({timeline, scrollref, triggerRef}:{timeli
                             skills: "JavaScript, Regex",
                             text:"After I've learn that Vs Code extension can be made with JavaScript I thought it can be a good way to improve my JavaScript skills. I've started to working on a extension that was capable of showing how many elements wille be impact by a ligne of CSS in a project. I've managed by using Regex to select the css query under the mouse. The difficulty was now to search in each files of the workspace to see if the css will impact. \n To do that I made a recursive function that was able to verify if the file have an html extension. Thanks to JSDOM I've been able to do queries on the file with the query selected. I've published the extension on the Vs Code Marketplace but unfortunately I've failed to make it work with React Component"
                         }
-
 
                     ];
 
