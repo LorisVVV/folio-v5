@@ -6,7 +6,11 @@
     height: 100vh;
     transform: translate(-50%, 50%);
     /* opacity: 0; */
-    pointer-events: none;
+}
+
+.circle, .circle * {
+    pointer-events: none !important;
+
 }
 
 .title {

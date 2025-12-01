@@ -1,5 +1,5 @@
 .title {
-    display: none;
+    display: block;
     font-family: Satoshi;
     font-style: italic;
     font-weight: bolder;
@@ -8,4 +8,16 @@
     left: 10vw;
     opacity: 0;
     font-size: 96;
+}
+
+.linkContainer {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+    left: 10vw;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
 }

@@ -1,0 +1,20 @@
+.Step {
+    backdrop-filter: blur(5px);
+    font-family: Satoshi;
+
+}
+
+.corner:first-of-type {
+    top: -0.5em;
+    left: -0.5em;
+    position: absolute;
+    backdrop-filter: none !important;
+}
+
+.corner:last-child {
+    position: absolute;
+    bottom: -0.5em;
+    right: -0.5em;
+    transform: rotate(180deg);
+    backdrop-filter: none !important;
+}

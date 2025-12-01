@@ -1,0 +1,18 @@
+.Link {
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+}
+
+.container {
+    width: fit-content;
+    height: fit-content;
+    overflow: hidden;
+    padding: 0.5em;
+    backdrop-filter: blur(5px);
+    border-radius: 15px;
+}
+
+.icon {
+    height: fit-content;
+}

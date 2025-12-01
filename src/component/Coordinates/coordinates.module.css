@@ -10,7 +10,9 @@
 
     gap: 1em;
 
-    opacity: 0.5;
+    /* opacity: 0.5; */
+
+    color: #bcbcbc;
 }
 
 .coordinates::before {

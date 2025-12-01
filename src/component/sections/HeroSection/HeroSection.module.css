@@ -1,10 +1,42 @@
 .title {
     display: flex;
-    font-family: Satoshi;
-    font-style: italic;
-    font-weight: bolder;
+    flex-direction: column;
     position: absolute;
     top: 15vh;
     left: 10vw;
-    font-size: 96;
+    font-style: italic;
+}
+
+.name {
+    font-family: Satoshi;
+    font-weight: bolder;
+    font-size: 109;
+}
+
+.subtitle {
+    width: 100%;
+    text-align: end;
+    margin-top: -30px;
+    padding-right: 12px;
+}
+
+.scrollIcon {
+    position: absolute;
+    bottom: 5em;
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    pointer-events: none;
+    gap: 0.5em;
+}
+
+.scrollIcon > svg {
+    width: 4em;
+}
+
+.scrollIcon > p {
+    font-style: italic;
 }

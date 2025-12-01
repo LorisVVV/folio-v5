@@ -7,6 +7,12 @@ import ProjectName from "./ProjectName/ProjectName";
 import { DrawSVGPlugin } from "gsap/DrawSVGPlugin";
 import ProjectOverview from "./ProjectOverview/ProjectOverview";
 
+import linkedin from "@/assets/icons/linkedin.svg"
+import github from "@/assets/icons/github.svg"
+import mail from "@/assets/icons/mail.svg"
+import phone from "@/assets/icons/phone.svg"
+import { StaticImport } from "next/dist/shared/lib/get-img-props";
+
 gsap.registerPlugin(useGSAP);
 gsap.registerPlugin(ScrollTrigger);
 gsap.registerPlugin(DrawSVGPlugin);
@@ -71,7 +77,6 @@ export default function ProjectSection({timeline, scrollref, triggerRef}:{timeli
 
 
 
-
     useGSAP(() => {
 
         const timelineProject = gsap.timeline(
@@ -85,7 +90,7 @@ export default function ProjectSection({timeline, scrollref, triggerRef}:{timeli
                         }}
                     )
 
-                // .fromTo("", {display:"none"}, {display : "block"})
+                .fromTo("*", {pointerEvents: "none"}, {pointerEvents : "all"})
                 .to("."+style.title, 
                     {opacity: "1", duration : 1}
                 )
@@ -103,6 +108,7 @@ export default function ProjectSection({timeline, scrollref, triggerRef}:{timeli
                     })
                 });
 
+                // each project
                 q(".ProjectName").forEach((element, index) => {
                     timelineProject.to(element, {
                         scale: "1.2", 
@@ -111,10 +117,16 @@ export default function ProjectSection({timeline, scrollref, triggerRef}:{timeli
                     })
                     
                     if (projects[index]) {
-                        timelineProject.fromTo(projects[index].ref.current, 
-                            {opacity : 0},
-                            {opacity : 1, duration:1})
 
+                        const blurElt = projects[index].ref.current.querySelectorAll('.blur')
+                        // const opacityElt = projects[index].ref.current.querySelectorAll('.blur > *')
+
+
+                        timelineProject.fromTo(blurElt,
+                            {backdropFilter: "blur(0px)", opacity : 0},
+                            {backdropFilter: 'blur(5px)', opacity : 1, duration:1}
+
+                        )
                         .to({}, {
                             duration : 1
                         })
@@ -143,7 +155,7 @@ export default function ProjectSection({timeline, scrollref, triggerRef}:{timeli
                     {opacity: "0", duration: 1}
                 )
                 .to({}, {duration : 1})
-                .set("."+style.projectsSection, {display : "none"})
+                .set("*", {pointerEvents : "none"})
         
         ScrollTrigger.refresh();
 
@@ -174,7 +186,6 @@ export default function ProjectSection({timeline, scrollref, triggerRef}:{timeli
             
             })
             }
-
             
 
         </section>
