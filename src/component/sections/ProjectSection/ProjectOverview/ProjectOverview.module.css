@@ -64,3 +64,31 @@
     transform: rotate(180deg);
     backdrop-filter: none !important;
 }
+
+
+@media (width <= 900px) {
+    .ProjectOverview, .ProjectOverview * {
+        pointer-events: none !important;
+    }
+
+    .ProjectOverview {
+        top: calc(calc(130px + 1em) + 5vh);
+        bottom: 0;
+        width: 80vw;
+        right: 0;
+        left: 0;
+        margin: 0 auto ;
+    }
+}
+
+@media (width <= 700px) {
+    .ProjectOverview p {
+        font-size: small;
+    }
+}
+
+@media (width <= 450px) {
+    .ProjectOverview {
+        top: calc(calc(87px + 1em) + 5vh);
+    }
+}

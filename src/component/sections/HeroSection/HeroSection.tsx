@@ -42,7 +42,7 @@ export default function HeroSection({timeline, scrollref, triggerRef}:{timeline?
         <section ref={sectionRef} className={style.heroSection}>
 
             <div className={style.title}>
-                <h1 className={style.name}>Loris Vullion</h1>
+                <h1 className={style.name}>Loris <br /> Vullion</h1>
 
                 <h2 className={style.subtitle}>Portfolio V5</h2>                
             </div>

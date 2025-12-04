@@ -40,3 +40,24 @@
 .scrollIcon > p {
     font-style: italic;
 }
+
+.title br {
+    display: none;
+}
+
+
+
+@media (width <= 780px) {
+    .title {
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        width: fit-content;
+    }
+}
+
+@media (width <= 605px) {
+    .title br {
+        display: block;
+    }
+}

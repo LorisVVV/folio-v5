@@ -21,3 +21,19 @@
     flex-direction: column;
     gap: 1em;
 }
+
+@media (width <= 780px) {
+    .title {
+        left: 0;
+        right: 0;
+        top: 5vh;
+        margin: 0 auto;
+        width: fit-content;
+    }
+}
+
+@media (width <= 450px) {
+    .title {
+        font-size: 64;
+    }
+}

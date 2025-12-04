@@ -3,3 +3,9 @@
     color: white;
     opacity: 0;
 }
+
+@media (width <= 900px) {
+    .ProjectName {
+        display: none;
+    }
+}

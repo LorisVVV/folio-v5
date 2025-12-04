@@ -38,3 +38,9 @@
     text-align: end;
     flex: 1;
 }
+
+@media (width <= 780px) {
+    .coordinates {
+        display: none;
+    }
+}

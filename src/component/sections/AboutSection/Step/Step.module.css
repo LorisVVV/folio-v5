@@ -45,3 +45,32 @@
     width: initial !important;
     border-radius: 0 !important;
 }
+
+@media (width <= 900px) {
+    .Step, .Step * {
+        pointer-events: none !important;
+    }
+
+    .Step {
+        top: calc(calc(130px + 10em) + 5vh);
+        bottom: 0;
+        width: 80vw;
+        right: 0;
+        left: 0;
+        margin: 0 auto ;
+    }
+
+    
+}
+
+@media (width <= 700px) {
+    .Step p {
+        font-size: small;
+    }
+}
+
+@media (width <= 450px) {
+    .Step {
+        top: calc(calc(87px + 7em) + 5vh);
+    }
+}
