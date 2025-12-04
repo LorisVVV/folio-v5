@@ -7,12 +7,6 @@ import ProjectName from "./ProjectName/ProjectName";
 import { DrawSVGPlugin } from "gsap/DrawSVGPlugin";
 import ProjectOverview from "./ProjectOverview/ProjectOverview";
 
-import linkedin from "@/assets/icons/linkedin.svg"
-import github from "@/assets/icons/github.svg"
-import mail from "@/assets/icons/mail.svg"
-import phone from "@/assets/icons/phone.svg"
-import { StaticImport } from "next/dist/shared/lib/get-img-props";
-
 gsap.registerPlugin(useGSAP);
 gsap.registerPlugin(ScrollTrigger);
 gsap.registerPlugin(DrawSVGPlugin);
@@ -98,7 +92,6 @@ export default function ProjectSection({timeline, scrollref, triggerRef}:{timeli
                     {drawSVG: "60% 75%"},
                     {drawSVG: "80% 95%", duration:2}
                 )
-
 
                 // Project Name arrives
                 q(".ProjectName").forEach(element => {

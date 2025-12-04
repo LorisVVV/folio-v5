@@ -3,12 +3,13 @@ import style from "./Step.module.css"
 
 export default function Step({data}:{data:{
                                         ref:RefObject<HTMLDivElement>,
+                                        percent: number,
                                         title:string,
                                         dates:string,
                                         text:string 
                                             }}) {
     return (
-        <div ref={data.ref} className={style.Step}>
+        <div ref={data.ref} className={style.Step} >
             <h2>{data.title}</h2>
             <div className={style.dates}>
                 <h4>Dates :</h4>

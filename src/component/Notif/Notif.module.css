@@ -1,0 +1,20 @@
+.notif {
+  position: absolute;
+  pointer-events: none;
+  width: 100vw;
+
+}
+
+
+.notif > p {
+  position: absolute;
+  display: block;
+  font-weight: bolder;
+  z-index: 10;
+}
+
+@media (width <= 780px) {
+  .notif {
+    display: none;
+  }
+}
