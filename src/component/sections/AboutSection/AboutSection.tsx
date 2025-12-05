@@ -40,7 +40,7 @@ export default function AboutSection({timeline, scrollref, triggerRef}:{timeline
                         percent: 0.60,
                         title: "Internship at Vetagro Sup",
                         dates: "2025 - 2025",
-                        text: "12 weeks of intership where I've built a complete 'shopping website'" 
+                        text: "12 weeks of intership where I've built a complete 'shopping' website" 
                     },
                     {
                         ref: useRef<HTMLDivElement>(null!),

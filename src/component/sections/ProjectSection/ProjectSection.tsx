@@ -120,7 +120,7 @@ export default function ProjectSection({timeline, scrollref, triggerRef}:{timeli
 
                         )
                         .to({}, {
-                            duration : 1
+                            duration : 2
                         })
 
                         .to(projects[index].ref.current, 

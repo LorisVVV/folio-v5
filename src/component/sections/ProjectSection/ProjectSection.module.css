@@ -28,9 +28,7 @@
     .circle {
         display: none;
     }
-}
 
-@media (width <= 780px) {
     .title {
         left: 0;
         right: 0;

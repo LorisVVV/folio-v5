@@ -7,15 +7,18 @@
     height: fit-content;
 
     position: absolute;
-    top: 0;
+    /* top: 0;
     bottom: 0;
     left: 0;
     right: 0;
-    margin: auto;
+    margin: auto; */
     backdrop-filter: blur(5px);
     border-radius: 15px;
     padding: 0.5em;
     gap: 0.5em;
+
+    transform: translateY(-50%)
+                translateX(50%);
 }
 
 
@@ -52,12 +55,13 @@
     }
 
     .Step {
-        top: calc(calc(130px + 10em) + 5vh);
+        top: calc(calc(130px + 10em) + 5vh) !important;
         bottom: 0;
         width: 80vw;
-        right: 0;
+        right: 0 !important;
         left: 0;
         margin: 0 auto ;
+        transform: translateX(0) translateY(0);
     }
 
     

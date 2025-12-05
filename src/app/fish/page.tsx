@@ -6,6 +6,7 @@ import Notif from "@/component/Notif/Notif";
 import Image from "next/image";
 import gsap from "gsap"
 import { useGSAP } from "@gsap/react";
+import Link from "next/link";
 
 // import fishingRodIcon from "@/public/image/fishingRodIcon.svg";
 
@@ -285,6 +286,11 @@ export default function Home() {
 
         <div className={style.left}>
 
+          <Link className={style.return} href={"/"}>
+            <Image src={"icons/icon.svg"} alt="Back to portoflio" width={30} height={30}/>
+          </Link>
+
+
           <h1 className={style.title}>Fish Clicker</h1>
 
           <div className={style.clicker} onClick={() => clickHandler()}>
@@ -306,7 +312,7 @@ export default function Home() {
           <div onClick={() => upgrade("upgradeBait")} className={!gameData.baitUpgrades[baitUpgrade+1] ? style.maxed : click >= gameData.baitUpgrades[baitUpgrade+1].fishNeeded ? style.upgradable : style.none}>
             
             <div className={style.iconAndName}>
-              <Image src={'image/baitIcon.svg'} alt="Boat Icon for upgrade" width={30} height={30}/>
+              <Image src={'icons/baitIcon.svg'} alt="Boat Icon for upgrade" width={30} height={30}/>
 
               <div className={style.upgradeTitle}>
                 <h2>
@@ -333,7 +339,7 @@ export default function Home() {
             
             <div className={style.iconAndName}>
             
-              <Image src={'image/fishingrodIcon.svg'} alt="Fishing rod Icon for upgrade" width={30} height={30}/>
+              <Image src={'icons/fishingrodIcon.svg'} alt="Fishing rod Icon for upgrade" width={30} height={30}/>
               
               <div className={style.upgradeTitle}>  
                 <h2>
@@ -361,7 +367,7 @@ export default function Home() {
             
             <div className={style.iconAndName}>
               
-              <Image src={'image/boatIcon.svg'} alt="Boat Icon for upgrade" width={30} height={30}/>
+              <Image src={'icons/boatIcon.svg'} alt="Boat Icon for upgrade" width={30} height={30}/>
               
 
               <div className={style.upgradeTitle}>

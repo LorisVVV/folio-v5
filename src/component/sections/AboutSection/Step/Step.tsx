@@ -9,7 +9,7 @@ export default function Step({data}:{data:{
                                         text:string 
                                             }}) {
     return (
-        <div ref={data.ref} className={style.Step} >
+        <div ref={data.ref} className={style.Step} style={{top : (100*data.percent)+"vh", right : ((50*data.percent)+25+"vw")}}>
             <h2>{data.title}</h2>
             <div className={style.dates}>
                 <h4>Dates :</h4>

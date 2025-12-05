@@ -5,20 +5,24 @@ import styles from "./page.module.css";
 import Coordinates from "@/component/Coordinates/Coordinates";
 import Corner from "@/component/Corner/Corner";
 import Grid from "@/component/Grid/Grid";
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import Dither from "@/component/Dither/Dither";
+import gsap from "gsap"
+import { useGSAP } from "@gsap/react"
+gsap.registerPlugin(useGSAP);
 
 export default function Home() {
 
   const isFixed = useRef<boolean>(true)
+
+  useGSAP(() => {
+    gsap.to("."+styles.page, {opacity: 1, duration: 1})
+  })
+
   
   return (
-    <div className={styles.page}>
+    <div className={styles.page} >
       <main className={styles.main}>
-
-        {/* <button id="testButton" className={styles.button +" targetCursor"} onClick={() => isFixed.current = !isFixed.current}>
-          test
-        </button> */}
 
         <Content />
         <Coordinates/>       
