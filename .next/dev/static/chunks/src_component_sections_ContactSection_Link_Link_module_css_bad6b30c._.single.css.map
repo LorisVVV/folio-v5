@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 1, "column": 0}, "map": {"version":3,"sources":["turbopack:///[project]/src/component/sections/ContactSection/Link/Link.module.css"],"sourcesContent":[".Link {\r\n    display: flex;\r\n    align-items: center;\r\n    gap: 0.5em;\r\n}\r\n\r\n.container {\r\n    width: fit-content;\r\n    height: fit-content;\r\n    overflow: hidden;\r\n    padding: 0.5em;\r\n    backdrop-filter: blur(5px);\r\n    border-radius: 15px;\r\n    cursor: pointer;\r\n}\r\n\r\n.icon {\r\n    height: fit-content;\r\n}"],"names":[],"mappings":"AAAA;;;;;;AAMA;;;;;;;;;;;AAUA"}}]
+}

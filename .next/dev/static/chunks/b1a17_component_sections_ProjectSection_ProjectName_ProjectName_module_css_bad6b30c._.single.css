@@ -1,0 +1,14 @@
+/* [project]/src/component/sections/ProjectSection/ProjectName/ProjectName.module.css [app-client] (css) */
+.ProjectName-module__Uhi3-a__ProjectName {
+  color: #fff;
+  opacity: 0;
+  position: absolute;
+}
+
+@media (max-width: 900px) {
+  .ProjectName-module__Uhi3-a__ProjectName {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=b1a17_component_sections_ProjectSection_ProjectName_ProjectName_module_css_bad6b30c._.single.css.map*/

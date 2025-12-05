@@ -1,0 +1,73 @@
+/* [project]/src/component/sections/AboutSection/Step/Step.module.css [app-client] (css) */
+.Step-module__jY3aOG__Step {
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+  border-radius: 15px;
+  flex-direction: column;
+  gap: .5em;
+  width: fit-content;
+  height: fit-content;
+  padding: .5em;
+  font-family: Satoshi;
+  display: flex;
+  position: absolute;
+  transform: translateY(-50%)translateX(50%);
+}
+
+.Step-module__jY3aOG__dates {
+  justify-content: space-between;
+  align-items: center;
+  max-width: 50%;
+  display: flex;
+}
+
+.Step-module__jY3aOG__corner:first-of-type {
+  position: absolute;
+  top: -.5em;
+  left: -.5em;
+  -webkit-backdrop-filter: none !important;
+  backdrop-filter: none !important;
+  width: initial !important;
+  border-radius: 0 !important;
+}
+
+.Step-module__jY3aOG__corner:last-child {
+  position: absolute;
+  bottom: -.5em;
+  right: -.5em;
+  transform: rotate(180deg);
+  -webkit-backdrop-filter: none !important;
+  backdrop-filter: none !important;
+  width: initial !important;
+  border-radius: 0 !important;
+}
+
+@media (max-width: 900px) {
+  .Step-module__jY3aOG__Step, .Step-module__jY3aOG__Step * {
+    pointer-events: none !important;
+  }
+
+  .Step-module__jY3aOG__Step {
+    width: 80vw;
+    margin: 0 auto;
+    bottom: 0;
+    left: 0;
+    transform: translateX(0)translateY(0);
+    top: calc(130px + 10em + 5vh) !important;
+    right: 0 !important;
+  }
+}
+
+@media (max-width: 700px) {
+  .Step-module__jY3aOG__Step p {
+    font-size: small;
+  }
+}
+
+@media (max-width: 450px) {
+  .Step-module__jY3aOG__Step {
+    top: calc(87px + 7em + 5vh);
+  }
+}
+
+/*# sourceMappingURL=src_component_sections_AboutSection_Step_Step_module_css_bad6b30c._.single.css.map*/

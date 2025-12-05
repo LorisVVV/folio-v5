@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 1, "column": 0}, "map": {"version":3,"sources":["turbopack:///[project]/src/component/Corner/corner.module.css"],"sourcesContent":[".corners {\r\n    position: absolute;\r\n    --space : 0;\r\n\r\n    width: 3em;\r\n    height: 3em;\r\n\r\n    pointer-events: none;\r\n}\r\n\r\n.corners.fixed {\r\n    --space : 1em;\r\n}\r\n\r\n.corners svg:nth-child(1) {\r\n    position: absolute;\r\n    top: var(--space);\r\n    left: var(--space);\r\n    transform: rotate(0);\r\n}\r\n\r\n.corners svg:nth-child(2) {\r\n    top: var(--space);\r\n    right: var(--space);\r\n    position: absolute;\r\n    transform: rotate(90deg);\r\n}\r\n\r\n.corners svg:nth-child(3) {\r\n    bottom: var(--space);\r\n    right: var(--space);\r\n    position: absolute;\r\n    transform: rotate(180deg);\r\n}\r\n\r\n.corners svg:nth-child(4) {\r\n    bottom: var(--space);\r\n    left: var(--space);\r\n    position: absolute;\r\n    transform: rotate(270deg);\r\n}"],"names":[],"mappings":"AAAA;;;;;;;;AAUA;;;;AAIA;;;;;;;AAOA;;;;;;;AAOA;;;;;;;AAOA"}}]
+}

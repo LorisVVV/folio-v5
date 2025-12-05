@@ -1,0 +1,23 @@
+/* [project]/src/component/sections/ContactSection/SocialLink/SocialLink.module.css [app-client] (css) */
+.SocialLink-module__ZgYaFW__Link {
+  align-items: center;
+  gap: .5em;
+  display: flex;
+}
+
+.SocialLink-module__ZgYaFW__container {
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+  cursor: pointer;
+  border-radius: 15px;
+  width: fit-content;
+  height: fit-content;
+  padding: .5em;
+  overflow: hidden;
+}
+
+.SocialLink-module__ZgYaFW__icon {
+  height: fit-content;
+}
+
+/*# sourceMappingURL=src_component_sections_ContactSection_SocialLink_SocialLink_module_css_bad6b30c._.single.css.map*/

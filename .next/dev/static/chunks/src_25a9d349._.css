@@ -1,0 +1,40 @@
+/* [project]/src/app/page.module.css [app-client] (css) */
+.page-module___8aEwW__main {
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+}
+
+.page-module___8aEwW__button {
+  padding: .5em 1em;
+}
+
+.page-module___8aEwW__test {
+  background-color: #fff;
+  width: 100px;
+  height: 100px;
+}
+
+/* [project]/src/component/Coordinates/coordinates.module.css [app-client] (css) */
+.coordinates-module__FUo2Qq__coordinates {
+  font-size: smaller;
+  display: flex;
+  position: absolute;
+  bottom: 1em;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.coordinates-module__FUo2Qq__coordinates > div {
+  gap: .5em;
+  width: 70px;
+  display: flex;
+}
+
+.coordinates-module__FUo2Qq__coordinates > div > p:first-child {
+  font-weight: bolder;
+}
+
+/*# sourceMappingURL=src_25a9d349._.css.map*/

@@ -1,0 +1,52 @@
+/* [project]/src/component/sections/ContactSection/ContactSection.module.css [app-client] (css) */
+.ContactSection-module__rMrJsq__title {
+  opacity: 0;
+  font-family: Satoshi;
+  font-size: 96px;
+  font-style: italic;
+  font-weight: bolder;
+  display: block;
+  position: absolute;
+  top: 15vh;
+  left: 10vw;
+}
+
+.ContactSection-module__rMrJsq__linkContainer {
+  flex-direction: column;
+  gap: 1em;
+  height: fit-content;
+  margin: auto 0;
+  display: flex;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 10vw;
+}
+
+.ContactSection-module__rMrJsq__fish {
+  cursor: pointer;
+  z-index: 4;
+  border-radius: 50px;
+  padding: .75em;
+  position: absolute;
+  bottom: 2em;
+  right: 2em;
+}
+
+@media (max-width: 900px) {
+  .ContactSection-module__rMrJsq__title {
+    width: fit-content;
+    margin: 0 auto;
+    top: 5vh;
+    left: 0;
+    right: 0;
+  }
+}
+
+@media (max-width: 450px) {
+  .ContactSection-module__rMrJsq__title {
+    font-size: 64px;
+  }
+}
+
+/*# sourceMappingURL=src_component_sections_ContactSection_ContactSection_module_css_bad6b30c._.single.css.map*/

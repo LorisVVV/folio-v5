@@ -1,0 +1,169 @@
+/* [project]/src/app/fish/page.module.css [app-client] (css) */
+.page-module__OZBMxq__page {
+  background-position: end;
+  --dark-green: #14281d;
+  --hunter-green: #355834;
+  --field-drab: #6e633d;
+  --ecru: #c2a878;
+  --baby-powder: #f1f5f2;
+  --sea-blue: #0d6ed5;
+  --dark-ocean-breeze: #03045e;
+  --ocean-breeze: #0077b6;
+  --light-ocean-breeze: #00b4d8;
+  color: #000;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  display: flex;
+  overflow-y: hidden;
+}
+
+.page-module__OZBMxq__main {
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  overflow-y: hidden;
+}
+
+.page-module__OZBMxq__clicker {
+  cursor: pointer;
+  width: fit-content;
+  height: fit-content;
+}
+
+.page-module__OZBMxq__clicker img {
+  width: 300px;
+  height: auto;
+}
+
+.page-module__OZBMxq__left {
+  background: url("../media/wave.76127afc.gif") var(--sea-blue);
+  background-position: bottom;
+  background-size: cover;
+  flex-direction: column;
+  flex: 1;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2em;
+  display: flex;
+}
+
+.page-module__OZBMxq__upgrades {
+  background-color: var(--field-drab);
+  border-left: var(--dark-green) 4px solid;
+  flex-direction: column;
+  gap: 1.5em;
+  padding: 1em;
+  display: flex;
+}
+
+.page-module__OZBMxq__upgrades > div {
+  cursor: not-allowed;
+  word-break: keep-all;
+  background-color: var(--ecru);
+  border: var(--dark-green) 4px solid;
+  border-radius: 15px;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2em;
+  width: 100%;
+  padding: .5em;
+  display: flex;
+}
+
+.page-module__OZBMxq__upgradable {
+  cursor: pointer !important;
+  border-color: var(--hunter-green) !important;
+}
+
+.page-module__OZBMxq__upgradeTitle {
+  flex-direction: column;
+  display: flex;
+}
+
+.page-module__OZBMxq__reset {
+  background-color: var(--dark-ocean-breeze);
+  color: #fff;
+  cursor: pointer;
+  border-radius: 15px;
+  gap: 1em;
+  width: fit-content;
+  height: fit-content;
+  padding: .5em;
+  font-weight: bolder;
+  display: flex;
+  position: absolute;
+  bottom: 2em;
+  right: 2em;
+}
+
+.page-module__OZBMxq__title {
+  background-color: var(--ecru);
+  border: var(--dark-green) 4px solid;
+  border-radius: 15px;
+  padding: .5em;
+  position: relative;
+}
+
+.page-module__OZBMxq__title:before {
+  content: "";
+  border-left: var(--dark-green) 4px solid;
+  width: 2px;
+  height: 100px;
+  display: block;
+  position: absolute;
+  bottom: 100%;
+}
+
+.page-module__OZBMxq__title:after {
+  content: "";
+  border-left: var(--dark-green) 4px solid;
+  width: 2px;
+  height: 100px;
+  display: block;
+  position: absolute;
+  bottom: 100%;
+  right: .5em;
+}
+
+.page-module__OZBMxq__iconAndName {
+  align-items: center;
+  gap: .5em;
+  display: flex;
+}
+
+.page-module__OZBMxq__return {
+  width: fit-content;
+  height: fit-content;
+  position: absolute;
+  top: 1em;
+  left: 1em;
+}
+
+@media (max-width: 780px) {
+  .page-module__OZBMxq__main {
+    flex-direction: column-reverse;
+  }
+
+  .page-module__OZBMxq__upgrades {
+    z-index: 2;
+    border-left: none;
+    border-bottom: var(--dark-green) 4px solid;
+  }
+
+  .page-module__OZBMxq__reset {
+    z-index: 3;
+    top: .5em;
+    right: .5em;
+  }
+
+  .page-module__OZBMxq__return {
+    top: initial;
+    bottom: 1em;
+  }
+}
+
+/*# sourceMappingURL=src_app_fish_page_module_css_bad6b30c._.single.css.map*/

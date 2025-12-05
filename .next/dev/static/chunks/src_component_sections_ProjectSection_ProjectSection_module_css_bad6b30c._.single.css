@@ -1,0 +1,46 @@
+/* [project]/src/component/sections/ProjectSection/ProjectSection.module.css [app-client] (css) */
+.ProjectSection-module__F5CHjW__circle {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transform: translate(-50%, 50%);
+}
+
+.ProjectSection-module__F5CHjW__circle, .ProjectSection-module__F5CHjW__circle * {
+  pointer-events: none !important;
+}
+
+.ProjectSection-module__F5CHjW__title {
+  opacity: 0;
+  font-family: Satoshi;
+  font-size: 96px;
+  font-style: italic;
+  font-weight: bolder;
+  position: absolute;
+  top: 15vh;
+  left: 10vw;
+}
+
+@media (max-width: 900px) {
+  .ProjectSection-module__F5CHjW__circle {
+    display: none;
+  }
+
+  .ProjectSection-module__F5CHjW__title {
+    width: fit-content;
+    margin: 0 auto;
+    top: 5vh;
+    left: 0;
+    right: 0;
+  }
+}
+
+@media (max-width: 450px) {
+  .ProjectSection-module__F5CHjW__title {
+    font-size: 64px;
+  }
+}
+
+/*# sourceMappingURL=src_component_sections_ProjectSection_ProjectSection_module_css_bad6b30c._.single.css.map*/

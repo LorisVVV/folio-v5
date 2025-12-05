@@ -1,0 +1,64 @@
+/* [project]/src/component/sections/HeroSection/HeroSection.module.css [app-client] (css) */
+.HeroSection-module__ocWRHG__title {
+  flex-direction: column;
+  font-style: italic;
+  display: flex;
+  position: absolute;
+  top: 15vh;
+  left: 10vw;
+}
+
+.HeroSection-module__ocWRHG__name {
+  font-family: Satoshi;
+  font-size: 109px;
+  font-weight: bolder;
+}
+
+.HeroSection-module__ocWRHG__subtitle {
+  text-align: end;
+  width: 100%;
+  margin-top: -30px;
+  padding-right: 12px;
+}
+
+.HeroSection-module__ocWRHG__scrollIcon {
+  pointer-events: none;
+  flex-direction: column;
+  align-items: center;
+  gap: .5em;
+  margin: 0 auto;
+  display: flex;
+  position: absolute;
+  bottom: 5em;
+  left: 0;
+  right: 0;
+}
+
+.HeroSection-module__ocWRHG__scrollIcon > svg {
+  width: 4em;
+}
+
+.HeroSection-module__ocWRHG__scrollIcon > p {
+  font-style: italic;
+}
+
+.HeroSection-module__ocWRHG__title br {
+  display: none;
+}
+
+@media (max-width: 780px) {
+  .HeroSection-module__ocWRHG__title {
+    width: fit-content;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+  }
+}
+
+@media (max-width: 605px) {
+  .HeroSection-module__ocWRHG__title br {
+    display: block;
+  }
+}
+
+/*# sourceMappingURL=src_component_sections_HeroSection_HeroSection_module_css_bad6b30c._.single.css.map*/

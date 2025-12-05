@@ -1,0 +1,193 @@
+/* [project]/src/component/Content/Content.module.css [app-client] (css) */
+.Content-module__uaul5W__Content {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+}
+
+.Content-module__uaul5W__scroll {
+  scrollbar-width: 0px;
+  scroll-behavior: smooth;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: auto;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.Content-module__uaul5W__section {
+  width: 100%;
+  height: 300vh;
+}
+
+/* [project]/src/component/sections/ProjectSection/ProjectSection.module.css [app-client] (css) */
+.ProjectSection-module__F5CHjW__title {
+  opacity: 0;
+  font-family: Satoshi;
+  font-size: 64px;
+  font-style: italic;
+  font-weight: bolder;
+  display: none;
+  position: absolute;
+  top: 100px;
+  left: 100px;
+}
+
+/* [project]/src/component/sections/AboutSection/AboutSection.module.css [app-client] (css) */
+.AboutSection-module__54t7_a__title {
+  opacity: 0;
+  font-family: Satoshi;
+  font-size: 64px;
+  font-style: italic;
+  font-weight: bolder;
+  display: none;
+  position: absolute;
+  top: 100px;
+  left: 100px;
+}
+
+/* [project]/src/component/sections/ContactSection/ContactSection.module.css [app-client] (css) */
+.ContactSection-module__rMrJsq__title {
+  opacity: 0;
+  font-family: Satoshi;
+  font-size: 64px;
+  font-style: italic;
+  font-weight: bolder;
+  display: none;
+  position: absolute;
+  top: 100px;
+  left: 100px;
+}
+
+/* [project]/src/component/sections/HeroSection/HeroSection.module.css [app-client] (css) */
+.HeroSection-module__ocWRHG__title {
+  font-family: Satoshi;
+  font-size: 64px;
+  font-style: italic;
+  font-weight: bolder;
+  display: flex;
+  position: absolute;
+  top: 100px;
+  left: 100px;
+}
+
+/* [project]/src/app/page.module.css [app-client] (css) */
+.page-module___8aEwW__main {
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  overflow: hidden;
+}
+
+.page-module___8aEwW__button {
+  padding: .5em 1em;
+}
+
+.page-module___8aEwW__test {
+  background-color: #fff;
+  width: 100px;
+  height: 100px;
+}
+
+/* [project]/src/component/Coordinates/coordinates.module.css [app-client] (css) */
+.coordinates-module__FUo2Qq__coordinates {
+  opacity: .5;
+  gap: 1em;
+  font-size: smaller;
+  display: flex;
+  position: absolute;
+  bottom: 1em;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.coordinates-module__FUo2Qq__coordinates:before {
+  content: "[";
+}
+
+.coordinates-module__FUo2Qq__coordinates:after {
+  content: "]";
+}
+
+.coordinates-module__FUo2Qq__coordinates > div {
+  width: 60px;
+  display: flex;
+}
+
+.coordinates-module__FUo2Qq__coordinates > div > p:first-child {
+  font-weight: bolder;
+}
+
+.coordinates-module__FUo2Qq__coordinates > div > p:last-child {
+  text-align: end;
+  flex: 1;
+}
+
+/* [project]/src/component/Corner/corner.module.css [app-client] (css) */
+.corner-module__9LC2pG__corners {
+  --space: 0;
+  pointer-events: none;
+  width: 3em;
+  height: 3em;
+  position: absolute;
+}
+
+.corner-module__9LC2pG__corners.corner-module__9LC2pG__fixed {
+  --space: 1em;
+}
+
+.corner-module__9LC2pG__corners svg:first-child {
+  top: var(--space);
+  left: var(--space);
+  position: absolute;
+  transform: rotate(0);
+}
+
+.corner-module__9LC2pG__corners svg:nth-child(2) {
+  top: var(--space);
+  right: var(--space);
+  position: absolute;
+  transform: rotate(90deg);
+}
+
+.corner-module__9LC2pG__corners svg:nth-child(3) {
+  bottom: var(--space);
+  right: var(--space);
+  position: absolute;
+  transform: rotate(180deg);
+}
+
+.corner-module__9LC2pG__corners svg:nth-child(4) {
+  bottom: var(--space);
+  left: var(--space);
+  position: absolute;
+  transform: rotate(270deg);
+}
+
+/* [project]/src/component/Grid/Grid.module.css [app-client] (css) */
+.Grid-module__YbSnrW__Grid {
+  z-index: -1;
+  grid-template-columns: repeat(auto-fill, minmax(var(--taille-cell), 1fr));
+  grid-template-rows: repeat(auto-fill, minmax(var(--taille-cell), 1fr));
+  pointer-events: none;
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.Grid-module__YbSnrW__Grid > div {
+  border: 1px solid #ffffff0d;
+}
+
+/*# sourceMappingURL=src_8d61ebac._.css.map*/

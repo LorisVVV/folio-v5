@@ -1,0 +1,28 @@
+/* [project]/src/app/page.module.css [app-client] (css) */
+.page-module___8aEwW__main {
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  overflow: hidden;
+}
+
+.page-module___8aEwW__main > div {
+  z-index: 1;
+}
+
+.page-module___8aEwW__button {
+  padding: .5em 1em;
+}
+
+.page-module___8aEwW__loading {
+  background-color: #000;
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/*# sourceMappingURL=src_app_page_module_2aa510fc.css.map*/

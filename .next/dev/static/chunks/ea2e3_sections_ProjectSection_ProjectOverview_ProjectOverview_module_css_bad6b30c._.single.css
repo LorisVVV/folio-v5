@@ -1,0 +1,93 @@
+/* [project]/src/component/sections/ProjectSection/ProjectOverview/ProjectOverview.module.css [app-client] (css) */
+.ProjectOverview-module__flfP5q__ProjectOverview {
+  flex-direction: column;
+  gap: 1em;
+  width: 30vw;
+  height: fit-content;
+  margin: auto 0;
+  font-family: Satoshi;
+  display: flex;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 10vw;
+}
+
+.ProjectOverview-module__flfP5q__ProjectOverview > h2 {
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+  border-radius: 15px;
+  padding: .5em;
+  font-size: xx-large;
+  font-style: italic;
+  font-weight: bolder;
+}
+
+.ProjectOverview-module__flfP5q__table {
+  border-radius: 15px;
+  flex-direction: column;
+  gap: .5em;
+  padding: .5em;
+  display: flex;
+}
+
+.ProjectOverview-module__flfP5q__table > div {
+  justify-content: space-between;
+  display: flex;
+}
+
+.ProjectOverview-module__flfP5q__text {
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+  border-radius: 15px;
+  width: 100%;
+  padding: .5em;
+}
+
+.ProjectOverview-module__flfP5q__text > p {
+  text-align: justify;
+  width: 100%;
+}
+
+.ProjectOverview-module__flfP5q__corner:first-of-type {
+  position: absolute;
+  top: -.5em;
+  left: -.5em;
+  -webkit-backdrop-filter: none !important;
+  backdrop-filter: none !important;
+}
+
+.ProjectOverview-module__flfP5q__corner:last-child {
+  position: absolute;
+  bottom: -.5em;
+  right: -.5em;
+  transform: rotate(180deg);
+  -webkit-backdrop-filter: none !important;
+  backdrop-filter: none !important;
+}
+
+@media (max-width: 900px) {
+  .ProjectOverview-module__flfP5q__ProjectOverview, .ProjectOverview-module__flfP5q__ProjectOverview * {
+    pointer-events: none !important;
+  }
+
+  .ProjectOverview-module__flfP5q__ProjectOverview {
+    width: 80vw;
+    margin: 0 auto;
+    inset: calc(130px + 1em + 5vh) 0 0;
+  }
+}
+
+@media (max-width: 700px) {
+  .ProjectOverview-module__flfP5q__ProjectOverview p {
+    font-size: small;
+  }
+}
+
+@media (max-width: 450px) {
+  .ProjectOverview-module__flfP5q__ProjectOverview {
+    top: calc(87px + 1em + 5vh);
+  }
+}
+
+/*# sourceMappingURL=ea2e3_sections_ProjectSection_ProjectOverview_ProjectOverview_module_css_bad6b30c._.single.css.map*/
