@@ -108,9 +108,9 @@ export default function ContactSection({timeline, scrollref, triggerRef}:{timeli
                 }
             </ul>
 
-            <Link ref={fishRef} href={"/fish"} className={style.fish} onMouseEnter={() => enterHandler()} onMouseLeave={() => leaveHandler()}>
+            {/* <Link ref={fishRef} href={"/fish"} className={style.fish} onMouseEnter={() => enterHandler()} onMouseLeave={() => leaveHandler()}>
                 <Image src={"icons/fishOutline.svg"} alt="Access fish game" width={30} height={30} />
-            </Link>
+            </Link> */}
             
             
 
