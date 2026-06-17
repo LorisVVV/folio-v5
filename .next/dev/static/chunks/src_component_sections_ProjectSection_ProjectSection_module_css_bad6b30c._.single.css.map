@@ -1,6 +1,0 @@
-{
-  "version": 3,
-  "sources": [],
-  "sections": [
-    {"offset": {"line": 1, "column": 0}, "map": {"version":3,"sources":["turbopack:///[project]/src/component/sections/ProjectSection/ProjectSection.module.css"],"sourcesContent":[".circle {\r\n    position: absolute;\r\n    left: 0;\r\n    bottom: 0;\r\n    width: 100vw;\r\n    height: 100vh;\r\n    transform: translate(-50%, 50%);\r\n    /* opacity: 0; */\r\n}\r\n\r\n.circle, .circle * {\r\n    pointer-events: none !important;\r\n\r\n}\r\n\r\n.title {\r\n    font-family: Satoshi;\r\n    font-style: italic;\r\n    font-weight: bolder;\r\n    position: absolute;\r\n    top: 15vh;\r\n    left: 10vw;\r\n    opacity: 0;\r\n    font-size: 96;\r\n}\r\n\r\n@media (width <= 900px) {\r\n    .circle {\r\n        display: none;\r\n    }\r\n\r\n    .title {\r\n        left: 0;\r\n        right: 0;\r\n        top: 5vh;\r\n        margin: 0 auto;\r\n        width: fit-content;\r\n    }\r\n}\r\n\r\n@media (width <= 450px) {\r\n    .title {\r\n        font-size: 64;\r\n    }\r\n}\r\n\r\n"],"names":[],"mappings":"AAAA;;;;;;;;;AAUA;;;;AAKA;;;;;;;;;;;AAWA;EACI;;;;EAIA;;;;;;;;;AASJ;EACI"}}]
-}

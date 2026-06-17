@@ -1,6 +1,0 @@
-{
-  "version": 3,
-  "sources": [],
-  "sections": [
-    {"offset": {"line": 1, "column": 0}, "map": {"version":3,"sources":["turbopack:///[project]/src/component/Coordinates/coordinates.module.css"],"sourcesContent":[".coordinates {\r\n    position: absolute;\r\n    bottom: 1em;\r\n    left: 50%;\r\n\r\n    transform: translateX(-50%);\r\n\r\n    display: flex;\r\n    font-size: smaller;\r\n\r\n    gap: 1em;\r\n\r\n    /* opacity: 0.5; */\r\n\r\n    color: #bcbcbc;\r\n}\r\n\r\n.coordinates::before {\r\n    content: \"[\";\r\n}\r\n\r\n.coordinates::after {\r\n    content: \"]\";\r\n}\r\n\r\n\r\n.coordinates > div {\r\n    width: 60px;\r\n\r\n    display: flex;\r\n}\r\n\r\n.coordinates > div > p:first-child {\r\n    font-weight: bolder;\r\n}\r\n\r\n.coordinates > div > p:last-child {\r\n    text-align: end;\r\n    flex: 1;\r\n}\r\n\r\n@media (width <= 780px) {\r\n    .coordinates {\r\n        display: none;\r\n    }\r\n}"],"names":[],"mappings":"AAAA;;;;;;;;;;;AAiBA;;;;AAIA;;;;AAKA;;;;;AAMA;;;;AAIA;;;;;AAKA;EACI"}}]
-}
