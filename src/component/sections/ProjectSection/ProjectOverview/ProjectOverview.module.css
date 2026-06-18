@@ -9,7 +9,14 @@
     gap: 1em;
     width: 30vw;
     height: fit-content;
-    font-family: Satoshi;
+    font-family: Satoshi-Medium;
+    pointer-events: none !important;
+
+}
+
+.ProjectOverview * {
+    pointer-events: none !important;
+
 }
 
 .ProjectOverview > h2 {

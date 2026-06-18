@@ -1,6 +1,6 @@
 .title {
     display: block;
-    font-family: Satoshi;
+    font-family: Satoshi-Black;
     font-style: italic;
     font-weight: bolder;
     position: absolute;
@@ -8,6 +8,8 @@
     left: 10vw;
     opacity: 0;
     font-size: 96;
+    pointer-events: none;
+
 }
 
 .linkContainer {
